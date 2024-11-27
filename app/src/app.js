@@ -4,6 +4,7 @@ const { zkVerifySession, ZkVerifyEvents } = require("zkverifyjs");
 const ethers = require("ethers");
 const yargs = require("yargs/yargs");
 const { hideBin } = require('yargs/helpers')
+require('dotenv').config({ path: ['.env', '.env.secrets'] })
 
 async function run() {
     argv = yargs(hideBin(process.argv))
