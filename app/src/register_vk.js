@@ -1,5 +1,6 @@
 const fs = require("fs");
 const { zkVerifySession } = require("zkverifyjs");
+require('dotenv').config({ path: ['.env', '.env.secrets'] })
 
 async function run() {
     // Load verification key from file
